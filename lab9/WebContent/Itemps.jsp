@@ -62,7 +62,7 @@ if (request.getParameter("hidItemIDDelete") != null) {
 						class="form-control form-control-sm"> <br> Item
 					price: <input id="itemPrice" name="itemPrice" type="text"
 						class="form-control form-control-sm"> <br> Item
-					description: <input id="itemDesc" name="itemDesc" type="text"
+					description: <input id="itemDese" name="itemDese" type="text"
 						class="form-control form-control-sm"> <br> <input
 						id="btnSave" name="btnSave" type="button" value="Save"
 						class="btn btn-primary"> <input type="hidden"
@@ -79,7 +79,7 @@ if (request.getParameter("hidItemIDDelete") != null) {
 
 				<%
 					Item itemObj = new Item();
-				out.print(itemObj.readItems());
+				   out.print(itemObj.readItems());
 				%>
 
 

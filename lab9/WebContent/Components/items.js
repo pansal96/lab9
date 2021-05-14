@@ -52,7 +52,7 @@ $("#hidItemIDSave").val($(this).closest("tr").find('#hidItemIDUpdate').val());
 $("#itemCode").val($(this).closest("tr").find('td:eq(0)').text());
 $("#itemName").val($(this).closest("tr").find('td:eq(1)').text());
 $("#itemPrice").val($(this).closest("tr").find('td:eq(2)').text());
-$("#itemDesc").val($(this).closest("tr").find('td:eq(3)').text());
+$("#itemDese").val($(this).closest("tr").find('td:eq(3)').text());
 });
 
 
@@ -99,7 +99,7 @@ $("#itemPrice").val(parseFloat(tmpPrice).toFixed(2));
 
 
 // DESCRIPTION------------------------
-if ($("#itemDesc").val().trim() == "")
+if ($("#itemDese").val().trim() == "")
 {
 return "Insert Item Description.";
 }
